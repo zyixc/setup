@@ -131,5 +131,3 @@ PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/$HOME/~}\007"'
 # End of Git branch config
 
 export TERM="screen-256color"
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"

@@ -4,9 +4,9 @@
 " For multi-byte character support (CJK support, for example):
 "set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,gb18030,latin1
 
-set tabstop=4       " Number of spaces that a <Tab> in the file counts for.
+set tabstop=2       " Number of spaces that a <Tab> in the file counts for.
 
-set shiftwidth=4    " Number of spaces to use for each step of (auto)indent.
+set shiftwidth=2    " Number of spaces to use for each step of (auto)indent.
 
 set expandtab       " Use the appropriate number of spaces to insert a <Tab>.
                     " Spaces are used in indents with the '>' and '<' commands
@@ -78,6 +78,8 @@ hi clear SpellBad   " Clear spell
 " Set spell result to underline red
 hi SpellBad cterm=underline,bold ctermfg=red
 
+set cursorline	    " Enable line Hightlighting
+
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing white spaces
 
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
@@ -94,13 +96,18 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Optional plugins
-Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 
 " Git fugitive plugin
 Plugin 'tpope/vim-fugitive'
 
+" Git rails plugin
+Plugin 'tpope/vim-rails'
+
 " Python plugin
 Plugin 'klen/python-mode'
+
+call vundle#end()
 
 filetype plugin indent on
 syntax on

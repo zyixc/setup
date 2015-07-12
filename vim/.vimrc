@@ -88,8 +88,6 @@ set laststatus=2    " Always show statusline
 
 set rtp+=~/.vim/bundle/Vundle.vim " set the runtime path to include Vundle and initialize
 
-set ToggleStripWhitespaceOnSave " strips extra whitespace on save
-
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')

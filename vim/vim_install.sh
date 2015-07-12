@@ -5,7 +5,6 @@
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Configure plugins
-cp .vimrc ~/
-
-# Install plugins
+cp .vimrc $HOME
 vim +PluginInstall +qall
+
